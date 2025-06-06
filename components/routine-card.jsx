@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { CheckCircle2, Circle, Edit3, Trash2 } from "lucide-react";
 import { useState } from "react";
 import { Input } from "./ui/input";
+import Link from "next/link";
 
 export default function RoutineCard({routine, routines, setRoutines}) {
     const handleDeleteRoutine = (routineId) => {
@@ -29,6 +30,7 @@ export default function RoutineCard({routine, routines, setRoutines}) {
 
     
     return (
+        
         <Card className={`bg-white/70 backdrop-blur-xs border-0 shadow-lg transition-all duration-200 hover:shadow-xl ${routine.completed ? "opacity-75" : ""}`}>
                             <CardContent className="p-4">
                                 <div className="flex gap-4">
@@ -86,5 +88,9 @@ export default function RoutineCard({routine, routines, setRoutines}) {
                                 </div>
                             </CardContent>
         </Card>
+
+        
     )
+
+    
 }

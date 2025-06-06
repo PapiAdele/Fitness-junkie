@@ -13,7 +13,7 @@ export default function Home(){
     </section>
       <div className="min-h-screen bg-liner-to-br from-blue-50 via-white to-purple-50">
         <div className=" relative z-10 container mx-auto px-4 py-8 max-w-4xl">
-          <Link href="/Login" className="text-2xl font-bold"><Button >Start your fitness journey</Button></Link>
+          <Link href="/Login" className="text-2xl font-bold "><Button className=" text-white shadow-lg bg-linear-to-r from-blue-500 to-purple-500 hover:cursor-pointer hover:to-purple-700">Start your fitness journey</Button></Link>
           <Header />
           <FitApp />
         </div>
