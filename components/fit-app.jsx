@@ -10,12 +10,19 @@ import CreateRoutineDialogue from "./create-routine-dialogue";
 export default function FitApp() {
     const [isDialogOpen, setIsDialogOpen] = useState (false)
     const [routines, setRoutines] = useState([])
+    const [selectedCategory, setSelectedCategory] = useState("All")
     const [newRoutine, setNewRoutine] = useState({
         id: Date.now(),
         title: '',
         category: 'Upper Body',
         completed: false
     });
+
+    
+    const filteredRoutines = selectedCategory === "All"
+    ? routines : routines.filter(r => r.category === selectedCategory);
+
+
     
     return(
         <>
@@ -37,12 +44,25 @@ export default function FitApp() {
         </div>
 
         <div className="space-y-4  max-w-lg mx-auto">
+
+            <select className="mb-4 px-3 py-2 border-2 rounded mx-auto font-bold text-xl hover:bg-blue-500 hover:text-white"
+        value={selectedCategory}
+        onChange={(e) => setSelectedCategory(e.target.value)} 
+    >
+        <option value="All">All Categories</option>
+        <option value="Upper Body">Upper Body</option>
+        <option value="Lower Body">Lower Body</option>
+        <option value="Cardio">Cardio</option>
+        <option value="Abs">Abs</option>
+
+    </select>
+
             {
                 routines.length === 0 ? (
                     <NoRoutine />
                 ) : (
 
-                routines.map(routine => (
+                filteredRoutines.map(routine => (
                         <RoutineCard 
                         key={routine.id}
                         routines={routines}
