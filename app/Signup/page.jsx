@@ -24,7 +24,7 @@ export default function Signup(){
 
         <>
         <div className="relative min-h-screen">
-            <div className="absolute inset-0 bg-[url('/Junkie.jpg')] bg-cover w-full h-screen z-0">
+            <div className="absolute inset-0 bg-[url('/Arms.jpg')] bg-cover w-full h-screen z-0">
             </div>
             <div className="  min-h-screen flex  flex-col items-center justify-center">
                 <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-full max-w-md mb-8 relative z-10 ">

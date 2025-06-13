@@ -9,7 +9,7 @@ export default function Home(){
   return (
 
   <div className="relative min-h-screen">
-    <section className="absolute inset-0 bg-[url('/workout-pic.jpg')] bg-cover w-full h-screen filter blur-1xl z-0" aria-hidden="true">
+    <section className="absolute inset-0 bg-[url('/junkie.jpg')] bg-cover w-full h-screen filter blur-1xl z-0" aria-hidden="true">
     </section>
       <div className="min-h-screen bg-liner-to-br from-blue-50 via-white to-purple-50">
         <div className=" relative z-10 container mx-auto px-4 py-8 max-w-4xl">

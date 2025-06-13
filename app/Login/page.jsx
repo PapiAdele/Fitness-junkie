@@ -19,13 +19,13 @@ export default function Login() {
 
         <>
 
-        <div className="max-w-6xl mx-auto py-0 px-3 mb-2 ">
-            <div className="flex mt-2">
-                <div className="bg-[url('/Arms.jpg')] bg-cover w-6xl h-screen">
+        <div className="max-w-7xl mx-auto py-0 px-1 ">
+            <div className="flex flex-row">
+                <div className="bg-[url('/Login-img.jpg')] bg-cover w-7xl h-screen">
                 </div>
                 <div className=" ml-6 max-w-6xl flex  flex-col items-center justify-center">
-                    <h1 className="text-2xl font-bold text-black">Start your fitness journey here</h1>
-                    <p className="text-xl font-serif">Your ultimate fitness partner to help you stay fit and health with personalized workout plans. </p>
+                    <h1 className="text-3xl font-bold text-center text-black mb-2">Start Your Fitness Journey Here</h1>
+                    <p className="text-xl font-serif text-center">Your ultimate fitness partner to help you stay fit and healthy with personalized workout plans and routines. </p>
 
                     <form onSubmit = {handleSubmit} className="bg-white p-6 rounded shadow-md w-full mt-4 max-w-md">
                         <input
